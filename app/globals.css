@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.order-list thead tr:last-child {
+  display: none;
+}
+.react-datepicker__header.react-datepicker__header--custom {
+  background-color: white;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.side-bar ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.side-bar ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.side-bar ::-webkit-scrollbar-thumb {
+  background: #8888885f;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.side-bar ::-webkit-scrollbar-thumb:hover {
+  background: #55555586;
+}
+
+/* For Firefox */
+.side-bar {
+  scrollbar-width: thin;
+  scrollbar-color: #8888885f #f1f1f1;
+}
+
+.side-bar:hover {
+  scrollbar-color: #55555586 #f1f1f1;
+}
+.react-datepicker__day--outside-month {
+  color: #ccc !important;
+  pointer-events: none;
+}
+.react-datepicker-wrapper input:focus {
+  outline: none;
+}
+.react-datepicker__tab-loop {
+  width: 0;
+}
+.react-datepicker__view-calendar-icon input {
+  padding: 6px 25px 5px 10px !important;
+}
+
+tr[aria-hidden='true'] {
+  display: none;
+}
